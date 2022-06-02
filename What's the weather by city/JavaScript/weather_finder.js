@@ -8,7 +8,7 @@ const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
 //const list_geo = document.querySelector(".ajax-weather-geo .cities_geo");
 const apiKey = "299afb200bead9d9396ca95234d219ad";
-const googleApiKey = "AIzaSyDhlPqYmwv_28R9KW74yLjtGpDXfQ9BEnQ";
+const googleApiKey = "AIzaSyAjczwWzjEDfPCCk07YamMsFb1BDLdXjBI";
 
 /* SECTION location typed by user */
 form.addEventListener("submit", e => {
