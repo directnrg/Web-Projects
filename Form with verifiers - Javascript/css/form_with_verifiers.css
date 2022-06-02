@@ -1,0 +1,65 @@
+/* form */
+form {
+    width: 441px;
+    position:relative;
+ }
+
+ fieldset {
+    position: relative;
+    background-color: rgb(187, 187, 187);
+ }
+
+fieldset input {
+    text-align: left;
+    vertical-align: middle;
+}
+.formFormat {
+    padding: 4px;
+    vertical-align: middle;
+}
+
+label{
+    width: 100px;
+    vertical-align: middle;
+    text-align: left;
+    display:inline-block;
+    color:rgb(44, 44, 44);
+}
+
+#fieldSetComments {
+   color:rgb(44, 44, 44);
+   padding: 0px;
+   margin: 5px;
+}
+
+.generalError {
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+ padding-bottom: 5px;
+ color:crimson;
+
+}
+
+ p.errorMsg {
+    display: none;
+    color: red;
+    text-align: center;
+ }
+
+ /* buttons */
+input[type=button] {
+    display:inline-block;
+    font-size: 16px;
+    background: rgb(202,230,233);
+    width: 8em;
+    
+ }
+
+ .buttonsSection {
+    text-align: center;
+ }
+
+ .requiredField {
+    color: rgb(180, 44, 44);
+ }

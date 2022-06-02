@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/assignment4.css">
+    <link rel="stylesheet" href="css/grids_assigment4.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<fieldset>
+    <header>
+        <div class="mainbanner">
+        
+        <img src="imgs/bannerCentennial-980px_200px.png" alt=banner-cent.png>
+        <a href="https://www.centennialcollege.ca/" target="_blank"><img class="slidein" src="imgs/centennial logo transparent 500x200.png" alt=logo-cent.png></a>
+        <img class="photoBanner" src="imgs/bannerphotoCentennial-980px_200px.png" alt=photostudents_college.png>
+        </div>
+    </header>
+
+    <div class="centeredtext">
+    <h1>Centennial College</h1>
+    <h2>Continuing Education Course/Instructor Evaluation</h2>
+    </div>
+    <p>Please read each statement and consider each one individually. Use the <b>computer card</b> 
+        to make your choice (use a pencil to fill in the space). Give only <b>one answer</b> for each question.</p><br>
+
+<form>
+    <div class="grid-container-top">
+       <div class="course-code">
+        <label for="courseName/Code"><b>Courser Name/Code:</b></label>
+        <select id="courseName/Code" required>
+            <option value="" disabled selected>Select a course of the list</option>
+            <option value="0">Web Interface Design / COMP213403_2021W</option>
+            <option value="1">Software Engineering Fundaments / COMP120004_2021W</option>
+            <option value="2">Functions & Number systems / MATH175_2021W</option>
+            <option value="3">Programming 1 / COMP100005_2021W</option>
+        </select>
+       </div>
+       <div class="semester-fall"> 
+           <label for="Semester"><b>Semester:</b></label>
+           <input type="radio" name="Semester" id="Fall" required/>Fall
+       </div>
+       <div class="semester-winter">
+            <input type="radio" name="Semester" id="Winter"/>Winter
+       </div>
+       <div class="semester-ss">
+            <input type="radio" name="Semester" id="Spring/Summer"/>Spring/Summer
+        </div>
+        <div class="year">
+            <label for="yearInput"><b>Year:</b></label>
+            <input type="number" placeholder="YYYY" min="1900" max="2099" id="yearInput" required/>
+        </div> 
+        <div class="instructor-name">
+            <label for="Instructor"><b>Instructor:</b></label>
+            <select id=Instructor required>
+                <option value="" disabled selected>Select your instructor for the course</option>
+                <option value="0">Mark MacDonnell (Web interface Design)</option>
+                <option value="1">Siyang Xu (Software Engineering Fundaments)</option>
+                <option value="2">Mohammad Reza Peyghami (Mathematics)</option>
+                <option value="3">Merlin James Rukshan Dennis (Programming)</option>
+            </select>
+        </div>  
+    </div><br><br>
+
+   <!-- Container for INSTRUCTOR section -->
+    <div class="grid-container-instructor">  
+        <div class= "instructor-title">
+            <h3 class="plaintitle">&nbsp;&nbsp;&nbsp;INSTRUCTOR</h3>
+        </div>
+        <div class= "text1-instructor"><br>
+            How would you rate the instructor's:
+        </div>
+        
+        <!-- Question 1 - instructor section -->
+        <div class="q1-instructor">
+            <label for="knowledge">1.&nbsp;&nbsp;<b>Knowledge</b> of the subject?</label>
+        </div>
+        <div class="q1op1-instructor">
+            <input type="radio" name="knowledge" id="q1op1-inst" value="0" required/>Excellent
+        </div>
+        <div class="q1op2-instructor">
+            <input type="radio" name="knowledge" id="q1op2-inst" value="1"/>Good
+        </div>
+        <div class="q1op3-instructor">
+            <input type="radio" name="knowledge" id="q1op3-inst" value="2"/>Fair
+        </div>
+        <div class="q1op4-instructor">
+            <input type="radio" name="knowledge" id="q1op4-inst"  value="3"/>Not Satisfactory
+        </div>
+    
+        <!-- Question 2 - instructor section -->
+        <div class="q2-instructor">
+            <label for="helpfulness">2.&nbsp;&nbsp;<b>Helpfulness</b>?</label>
+        </div>
+        <div class="q2op1-instructor">
+            <input type="radio" name="helpfulness" id="q2op1-inst" value="0" required/>Excellent
+        </div>
+        <div class="q2op2-instructor">
+            <input type="radio" name="helpfulness" id="q2op2-inst" value="1"/>Good
+        </div>
+        <div class="q2op3-instructor">
+            <input type="radio" name="helpfulness" id="q2op3-inst" value="2"/>Fair
+        </div>
+        <div class="q2op4-instructor">
+            <input type="radio" name="helpfulness" id="q2op4-inst" value="3"/>Not Satisfactory
+        </div>
+
+        <!-- Question 3 - instructor section -->
+        <div class="q3-instructor">
+            <label for="Courtesy&respect">3.&nbsp;&nbsp;<b>Courtesy and respect</b> for all students?</label>
+        </div>
+        <div class="q3op1-instructor">
+            <input type="radio" name="Courtesy&respect" id="q3op1-inst" value="0" required/>Excellent
+        </div>
+        <div class="q3op2-instructor">
+            <input type="radio" name="Courtesy&respect" id="q3op2-inst" value="1"/>Good
+        </div>
+        <div class="q3op3-instructor">
+            <input type="radio" name="Courtesy&respect" id="q3op3-inst" value="2"/>Fair
+        </div>
+        <div class="q3op4-instructor">
+            <input type="radio" name="Courtesy&respect" id="q3op4-inst" value="3"/>Not Satisfactory
+        </div>
+
+        <!-- Question 4 - instructor section -->
+        <div class="q4-instructor">
+            <label for="communication">4.&nbsp;&nbsp;<b>Communication</b> skills?</label>
+        </div>
+        <div class="q4op1-instructor">
+            <input type="radio" name="communication" id="q4op1-inst" value="0" required/>Excellent
+        </div>
+        <div class="q4op2-instructor">
+            <input type="radio" name="communication" id="q4op2-inst" value="1"/>Good
+        </div>
+        <div class="q4op3-instructor">
+            <input type="radio" name="communication" id="q4op3-inst" value="2"/>Fair
+        </div>
+        <div class="q4op4-instructor">
+            <input type="radio" name="communication" id="q4op4-inst" value="3"/>Not Satisfactory
+        </div>
+
+        <!-- Question 5 - instructor section -->
+        <div class="q5-instructor">
+            <label for="performance">5.&nbsp;&nbsp;Overall <b>Perfomance</b>?</label>
+        </div>
+        <div class="q5op1-instructor">
+            <input type="radio" name="performance" id="q5op1-inst" value="0" required/>Excellent
+        </div>
+        <div class="q5op2-instructor">
+            <input type="radio" name="performance" id="q5op2-inst" value="1"/>Good
+        </div>
+        <div class="q5op3-instructor">
+            <input type="radio" name="performance" id="q5op3-inst" value="2"/>Fair
+        </div>
+        <div class="q5op4-instructor">
+            <input type="radio" name="performance" id="q5op4-inst" value="3"/>Not Satisfactory
+        </div>
+    </div><br>
+
+    <!-- Container for COURSE section -->
+    <div class="grid-container-course">
+        <div class="course-title">
+            <h3 class="plaintitle">&nbsp;&nbsp;&nbsp;COURSE</h3>
+        </div>
+        
+    <!-- Question 1 - COURSE section -->
+        <div class="q1-course"><br>
+            <label for="courseMaterials">6.&nbsp;&nbsp;How would you rate the <b>course materials</b>?</label>
+        </div>
+        <div class="q1op1-course">
+            <input type="radio" name="courseMaterials" id="q1op1-c" value="0" required/>Excellent
+        </div>
+        <div class="q1op2-course">
+            <input type="radio" name="courseMaterials" id="q1op2-c" value="1"/>Good
+        </div>
+        <div class="q1op3-course">
+            <input type="radio" name="courseMaterials" id="q1op3-c" value="2"/>Fair
+        </div>
+        <div class="q1op4-course">
+            <input type="radio" name="courseMaterials" id="q1op4-c" value="3"/>Not Satisfactory
+        </div>
+
+    <!-- Question 2 - COURSE section -->
+        <div class="q2-course">
+            <label for="expectations">7.&nbsp;&nbsp;How much did this course meet your <b>expectations</b>?</label>
+        </div>
+        <div class="q2op1-course">
+            <input type="radio" name="expectations" id="q2op1-c" value="0" required/>Excellent
+        </div>
+        <div class="q2op2-course">
+            <input type="radio" name="expectations" id="q2op2-c" value="1"/>Good
+        </div>
+        <div class="q2op3-course">
+            <input type="radio" name="expectations" id="q2op3-c" value="2"/>Fair
+        </div>
+        <div class="q2op4-course">
+            <input type="radio" name="expectations" id="q2op4-c" value="3"/>Not Satisfactory
+        </div>
+        
+    <!-- Question 3 - COURSE section -->
+        <div class="q3-course">
+            <label for="courseRate">8.&nbsp;&nbsp;How would you rate this course (<b>overall</b>)?</label>
+        </div>
+        <div class="q3op1-course">
+            <input type="radio" name="courseRate" id="q3op1-c" value="0" required/>Excellent
+        </div>
+        <div class="q3op2-course">
+            <input type="radio" name="courseRate" id="q3op2-c" value="1"/>Good
+        </div>
+        <div class="q3op3-course">
+            <input type="radio" name="courseRate" id="q3op3-c" value="2"/>Fair
+        </div>
+        <div class="q3op4-course">
+            <input type="radio" name="courseRate" id="q3op4-c" value="3"/>Not Satisfactory
+        </div>
+    </div><br>
+
+    <!-- Container - General information section -->
+    <div class="grid-container-general">
+        <div class="general-title">
+            <h3 class="plaintitle">&nbsp;&nbsp;&nbsp;GENERAL INFORMATION</h3>
+        </div>
+        <div class="q1-general"><br>
+            <label for="courseOutline">9.&nbsp;&nbsp;Was the <b>course outline</b> reviewed at the beginning of your course?</label>
+        </div>
+        <div class="q1op1-general">
+            <input type="radio" name="courseOutline" id="q1op1-g" value="0" required/>Yes
+        </div>
+        <div class="q1op2-general">
+            <input type="radio" name="courseOutline" id="q1op2-g" value="1"/>No
+        </div>
+        <div class="q1op3-general">
+            <input type="radio" name="courseOutline" id="q1op3-g" value="2"/>Not Sure
+        </div>
+        <div class="q2-general">
+            <label for="recommendation">10.&nbsp;&nbsp;Would you <b>recommend</b> this course to a friend with the same interest?</label>
+        </div>
+        <div class="q2op1-general">
+            <input type="radio" name="recommendation" id="q2op1-g" value="0"required/>Yes
+        </div>
+        <div class="q2op2-general">
+            <input type="radio" name="recommendation" id="q2op2-g" value="1"/>No
+        </div>
+        <div class="q2op3-general">
+            <input type="radio" name="recommendation" id="q2op3-g" value="2"/>Not Sure
+        </div>  
+    </div><br>
+
+    <!-- Container for Comments Section -->
+    <div class="grid-container-comments">
+        <div class="Comments">
+            <h3 class="plaintitle">&nbsp;&nbsp;&nbsp;ANY OTHER COMMENTS</h3><span class="plainSpan">&nbsp;&nbsp;&nbsp;(please input as many details as possible in the following lines)</span>
+        </div>
+        <div class="q1-comments"><br>
+            <label for="bestthing">11.&nbsp;&nbsp;Would you <b>recommend</b> this course to a friend with the same interest?</label>
+            <textarea row="4"cols="150" name="bestthing" id="q1-comm"></textarea>
+        </div>
+        <div class="q2-comments">
+            <label for="improve">12.&nbsp;&nbsp;How could we <b>improve</b> this course?</label>
+            <textarea row="4" cols="150" name="improve" id="q2-comm"></textarea>
+        </div>
+        <div class="q3-comments">
+            <label for="other">13.&nbsp;&nbsp;Other comments:</label>
+            <textarea rows="4" cols="150" name="other" id="q3-comm"></textarea> 
+        </div>
+    </div><br><br>
+
+    <div class="boxSubmitReset">
+        <input type="submit" value="Send form">
+        <input type="reset" value="Erase form">
+        </div><br><br>
+</form>
+
+    <div class="centeredtext">
+        <i>Thank you! We pay attention to your feedback!<br>
+        Web: <a href="www.centennialcollege.ca/continuing_education" class ="linksAppereance">www.centennialcollege.ca/continuing_education</a>&nbsp;
+        Email: <a href="mailto:continuingeducation@centennialcollege.ca" class ="linksAppereance">continuingeducation@centennialcollege.ca</a></i>
+    </div>
+</fieldset>
+</body>

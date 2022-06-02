@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/form_with_verifiers.css">
+</head>
+
+<body class="home">
+    <a href="index.html" class="home-link"><b>Home</b></a>
+    <h1 class="centered-text">Member Registration</h1>
+    <h2 class="centered-text">Please fill the form to be part of the <i style="color: rgb(32, 59, 209)">Club</i></h2>
+    <div class="generalError" id="errorText"></div>
+    <form class="centeredContent" id="memberForm">
+        <fieldset id="memberInfo">
+            <div class="centered-text">
+                <div class="formFormat">
+                    <label for="firstname">First Name<span class="requiredField">*</span></label>
+                    <input type="text" id="firstNameInput" required="required" />
+                </div>
+                <div class="formFormat">
+                    <label for="lastname">Last Name<span class="requiredField">*</span></label>
+                    <input type="text" id="lastNameInput" required="required" />
+                </div>
+                <div class="formFormat">
+                    <label for="address">Address<span class="requiredField">*</span></label>
+                    <input type="text" id="addressInput" required="required" />
+                </div>
+                <div class="formFormat">
+                    <label for="city">City<span class="requiredField">*</span></label>
+                    <input type="text" id="cityInput" required="required" />
+                </div>
+                <div class="formFormat">
+                    <label for="cadPostalCode">Postal Code<span class="requiredField">*</span></label>
+                    <input type="text" id="cadPostalCodeInput" required="required" />
+                    <p id="postalCodeError" class="errorMsg"></p>
+                </div>
+                <div class="formFormat">
+                    <label for="province">Province<span class="requiredField">*</span></label>
+                    <input type="text" id="provinceInput" required="required" />
+                    <p id="provinceErrorText" class="errorMsg"></p>
+                </div>
+                <div class="formFormat">
+                    <label for="age">Age<span class="requiredField">*</span></label>
+                    <input type="number" id="ageInput" required="required" />
+                    <p id="ageErrorText" class="errorMsg"></p>
+                </div>
+                <div class="formFormat">
+                    <label for="pw1">Password<span class="requiredField">*</span></label>
+                    <input type="password" id="pw1Input" name="password" required="required" />
+                </div>
+                <div class="formFormat">
+                    <label for="pw2">Password (confirm)<span class="requiredField">*</span></label>
+                    <input type="password" id="pw2Input" name="password" required="required" />
+                    <p id="pwErrorText" class="errorMsg"></p>
+                </div>
+                <div class="formFormat">
+                    <label for="email">Email Address<span class="requiredField">*</span></label>
+                    <input type="email" id="emailInput" required="required" />
+                    <p id="emailErrorText" class="errorMsg"></p>
+                </div>
+                <p class="centered-text" id="fieldSetComments">(<span class="requiredField">*</span>Required fields)</p>
+            </div>
+        </fieldset><br>
+        <div class="buttonsSection">
+            <button type="submit" formnovalidate id="registerBtn">Register Now</button>
+            <button type="reset" id="clearBtn">Clear Form</button>
+        </div>
+    </form><br>
+    <script src="JavaScript/assignment4.js"></script>
+    <footer class="centered-text">
+        <small><i>Copyright &copy; 2021 Fabian Soto, COMP 125-001, 2nd Semester - Summer 2021.</i></small>
+    </footer>
+</body>
+
+</html>

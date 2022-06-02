@@ -1,0 +1,234 @@
+/* TOP GRID */
+
+.grid-container-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 17px 0px;
+    grid-template-areas:
+      "course-code course-code course-code course-code"
+      "semester-fall semester-winter semester-ss year"
+      "instructor-name instructor-name instructor-name instructor-name";
+    align-self: center;
+}
+  
+  .course-code { grid-area: course-code; }
+  
+  .semester-fall { grid-area: semester-fall; }
+  
+  .semester-winter { grid-area: semester-winter; }
+  
+  .semester-ss { grid-area: semester-ss; }
+  
+  .year { grid-area: year; }
+  
+  .instructor-name { grid-area: instructor-name; }
+
+/* INSTRUCTOR GRID */
+  
+.grid-container-instructor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 0.6fr 0.6fr 0.9fr 0.6fr 0.9fr 0.6fr 0.9fr 0.6fr 0.9fr 0.6fr 0.9fr;
+    gap: 17px 0px;
+    grid-template-areas:
+      "instructor-title instructor-title instructor-title instructor-title"
+      "text1-instructor text1-instructor . ."
+      "q1-instructor q1-instructor . ."
+      "q1op1-instructor q1op2-instructor q1op3-instructor q1op4-instructor"
+      "q2-instructor q2-instructor . ."
+      "q2op1-instructor q2op2-instructor q2op3-instructor q2op4-instructor"
+      "q3-instructor q3-instructor . ."
+      "q3op1-instructor q3op2-instructor q3op3-instructor q3op4-instructor"
+      "q4-instructor . . ."
+      "q4op1-instructor q4op2-instructor q4op3-instructor q4op4-instructor"
+      "q5-instructor q5-instructor . ."
+      "q5op1-instructor q5op2-instructor q5op3-instructor q5op4-instructor";
+      align-self: center;
+}
+  
+.instructor-title { 
+      grid-area: instructor-title;
+      background-image: url(../imgs/title-minibanners.png);
+      display:grid;
+}
+    
+.text1-instructor { grid-area: text1-instructor; }
+
+.q1-instructor { grid-area: q1-instructor; }
+
+.q1op1-instructor { grid-area: q1op1-instructor; }
+
+.q1op2-instructor { grid-area: q1op2-instructor; }
+
+.q1op3-instructor { grid-area: q1op3-instructor; }
+
+.q1op4-instructor { grid-area: q1op4-instructor; }
+
+.q2-instructor { grid-area: q2-instructor; }
+
+.q2op1-instructor { grid-area: q2op1-instructor; }
+
+.q2op2-instructor { grid-area: q2op2-instructor; }
+
+.q2op3-instructor { grid-area: q2op3-instructor; }
+
+.q2op4-instructor { grid-area: q2op4-instructor; }
+
+.q3-instructor { grid-area: q3-instructor; }
+
+.q3op1-instructor { grid-area: q3op1-instructor; }
+
+.q3op2-instructor { grid-area: q3op2-instructor; }
+
+.q3op3-instructor { grid-area: q3op3-instructor; }
+
+.q3op4-instructor { grid-area: q3op4-instructor; }
+
+.q4-instructor { grid-area: q4-instructor; }
+
+.q4op1-instructor { grid-area: q4op1-instructor; }
+
+.q4op2-instructor { grid-area: q4op2-instructor; }
+
+.q4op3-instructor { grid-area: q4op3-instructor; }
+
+.q4op4-instructor { grid-area: q4op4-instructor; }
+
+.q5-instructor { grid-area: q5-instructor; }
+
+.q5op1-instructor { grid-area: q5op1-instructor; }
+
+.q5op2-instructor { grid-area: q5op2-instructor; }
+
+.q5op3-instructor { grid-area: q5op3-instructor; }
+
+.q5op4-instructor { grid-area: q5op4-instructor; }
+
+/* COURSE GRID */
+
+.grid-container-course {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 0.6fr 0.9fr 0.6fr 0.9fr 0.6fr 0.9fr;
+  gap: 17px 0px;
+  grid-template-areas:
+    "course-title course-title course-title course-title"
+    "q1-course q1-course . ."
+    "q1op1-course q1op2-course q1op3-course q1op4-course"
+    "q2-course q2-course . ."
+    "q2op1-course q2op2-course q2op3-course q2op4-course"
+    "q3-course q3-course . ."
+    "q3op1-course q3op2-course q3op3-course q3op4-course";
+    align-self: center;
+}
+    
+.course-title { grid-area: course-title;
+  background-image: url(../imgs/title-minibanners.png);
+  display:grid;
+}
+    
+.q1-course { grid-area: q1-course; }
+
+.q1op1-course { grid-area: q1op1-course; }
+
+.q1op2-course { grid-area: q1op2-course; }
+
+.q1op3-course { grid-area: q1op3-course; }
+
+.q1op4-course { grid-area: q1op4-course; }
+
+.q2-course { grid-area: q2-course; }
+
+.q2op1-course { grid-area: q2op1-course; }
+
+.q2op2-course { grid-area: q2op2-course; }
+
+.q2op3-course { grid-area: q2op3-course; }
+
+.q2op4-course { grid-area: q2op4-course; }
+
+.q3-course { grid-area: q3-course; }
+
+.q3op1-course { grid-area: q3op1-course; }
+
+.q3op2-course { grid-area: q3op2-course; }
+
+.q3op3-course { grid-area: q3op3-course; }
+
+.q3op4-course { grid-area: q3op4-course; }
+       
+
+/* GENERAL INFORMATION GRID */
+
+.grid-container-general {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 0.6fr 0.9fr 0.6fr 0.9fr;
+  gap: 17px 0px;
+  grid-template-areas:
+    "general-title general-title general-title general-title"
+    "q1-general q1-general q1-general ."
+    "q1op1-general q1op2-general q1op3-general ."
+    "q2-general q2-general q2-general ."
+    "q2op1-general q2op2-general q2op3-general .";
+    align-self: center;
+}
+
+.general-title { grid-area: general-title; 
+  background-image: url(../imgs/title-minibanners.png);
+  display:grid;
+}
+
+.q1-general { grid-area: q1-general; }
+
+.q1op1-general { grid-area: q1op1-general; }
+
+.q1op2-general { grid-area: q1op2-general; }
+
+.q1op3-general { grid-area: q1op3-general; }
+
+.q2-general { grid-area: q2-general; }
+
+.q2op1-general { grid-area: q2op1-general; }
+
+.q2op2-general { grid-area: q2op2-general; }
+
+.q2op3-general { grid-area: q2op3-general; }
+
+/* COMMENTS GRID */
+
+.grid-container-comments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70px 100px 100px 100px;
+  gap: 17px 0px;
+  grid-template-areas:
+    "Comments Comments Comments Comments"
+    "q1-comments q1-comments q1-comments q1-comments"
+    "q2-comments q2-comments q2-comments q2-comments"
+    "q3-comments q3-comments q3-comments q3-comments";
+    align-self: center;
+}
+.Comments { 
+  grid-area: Comments; 
+  background-image: url(../imgs/title-minibanners.png);
+}
+
+.q1-comments { 
+  grid-area: q1-comments;
+  display:flex;
+  flex-direction: column;
+}
+
+.q2-comments { 
+  grid-area: q2-comments;
+  display:flex;
+  flex-direction: column;
+}
+
+.q3-comments { 
+  grid-area: q3-comments;
+  display:flex;
+  flex-direction: column;
+}

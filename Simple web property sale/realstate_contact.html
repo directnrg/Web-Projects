@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<head>
+    <link rel="stylesheet" href="css/projectstyles.css" />
+    <link rel="stylesheet" href="css/projectgrids.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="main">
+    <header class="headerContainer">
+        <a href="final_project.html"><img class="logo" src="imgs/JF_Horz_LogoWhite.png" /></a>
+        <div class="mainContainer">
+            <div class="square-over-image">
+                <img class="homeImage" src="imgs/ViewslookingdownLombardSt.jpg" alt="main_image">
+                <div class="centeredText">
+                    <h1 class="titleh1">Bringing Welness to Real State</h1>
+                    <h3>COMPASS<br>
+                        San Fransisco + Marin</h3>
+                </div>
+            </div>
+        </div>
+        <div class="generalHeader">
+            <nav class="topnav">
+                <ul>
+                    <li class="litopnav"><a href="contact.html" class="contactBox">Contact</a></li>
+                    <li class="litopnav"><a href="Listing.html" class="links">Listing</a></li>
+                    <li class="litopnav"><a href="sales_page.html" class="links">Sales</a></li>
+                    <li class="litopnav"><a href="sitemap_credits.html" class="links">Site Map</a></li>
+                    <li class="litopnav"><a href="final_project.html" class="links">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="centeredText">CONTACT FORM</h1>
+    <hr class="hrQuotes">
+    <div class="grid-2columns">
+
+        <div class="row1col1grid">
+            <h2 class="centeredText">Tell us What you are looking for</h2>
+            <form>
+                <div>
+                    <label for="propertySelection"><b>What property are you interested in?</b></label>
+                    <select required>
+                        <option value="" disabled selected>Select a property</option>
+                        <option value="0">105 Boxwood Dr | San Rafael $1M</option>
+                        <option value="1">11 Ash Avenue | Kentfield $2.15M</option>
+                        <option value="2">1895 Pacific Ave APT 405 | San Francisco $1.31M</option>
+                    </select><br><br>
+
+                    <label for="propertyType"><b>What type of property are you interested in?</b></label>
+                    <select required>
+                        <option value="" disabled selected>Select a type of property</option>
+                        <option value="0">House</option>
+                        <option value="1">Condominium</option>
+                    </select><br><br>
+
+                    <label for="bedrooms"><b>Number of Bedrooms Desired:</b></label>
+                    <input type="number" id="bedrooms" name="bedrooms" min="1" max="10"><br><br>
+
+                    <label for="bathrooms"><b>Number of Bathrooms Desired:</b></label>
+                    <input type="number" id="bathrooms" name="bathrooms" min="1" max="5"><br><br>
+
+                    <label for="priceRange"><b>What price range are you looking for?</b></label>
+                    <select required>
+                        <option value="" disabled selected>Select a price range</option>
+                        <option value="0">$200th - $500th</option>
+                        <option value="1">$500th - $800th</option>
+                        <option value="3">$1M - $1.5M</option>
+                        <option value="4">$1.5M - Over</option>
+                    </select><br><br>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="row1col2grid">
+            <form>
+                <div>
+                    <h2 class="centeredText">Personal information</h2>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="phone">Enter your phone number:</label>
+
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <small>Format: 123-456-7890</small><br><br>
+
+                    <label for="email">Enter your email Address:</label>
+                    <input type="email" id="email" pattern=".+@globex.com" size="50" required><br><br>
+
+                    <label for="otherComments"><b>Please</b> let us know any other comments we can consider for you.</label><br>
+                    <textarea row="4" cols="40" name="otherComments" id="oth-comments"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Restart Form">
+                </div>
+            </form>
+        </div>
+
+
+    </div>

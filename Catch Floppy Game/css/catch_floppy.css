@@ -1,0 +1,78 @@
+canvas {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
+    cursor: url("../images/pointercapNet.png"), auto;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #64737D;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 18px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    padding-left: 5px;
+}
+
+.button:hover {
+    background-color: #7E9162;
+    color: black;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.scoreSize {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: fantasy;
+    text-shadow: 2px 2px 2px rgba(100,115,125, 0.5);
+
+}
+
+.gameTitle {
+    font-family: fantasy;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px rgba(100,115,125, 0.5);
+}
+/* .headerBg {
+    
+} */
+
+.pageBg {
+    background-color: #dae7f0;
+}

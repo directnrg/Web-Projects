@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/weather_finder.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="icon" href="./images/sunny_weather_icon.png">
+    <title>What's the Weather</title>
+
+</head>
+
+<body>
+    <div class="api">
+        <section class="top-banner">
+            <div class="container">
+                <h1 class="heading">What's the Weather</h1>
+                <form>
+                    <input type="text" placeholder="Search city" autofocus>
+                    <button type="submit">SUBMIT</button>
+                    <span class="msg"></span>
+                </form>
+            </div>
+        </section>
+        <section class="ajax-section">
+            <div class="container">
+                <ul class="cities"></ul>
+            </div>
+            <!-- </section>
+        <section class="middle-banner">
+            <div class="container">
+                <h1 class="heading_geo">Try your location Weather</h1>
+                <form id="formGeoLoc">
+                    <button type="submit">SUBMIT</button>
+                    <span class="msg"></span>
+                </form>
+            </div>
+        </section>
+        <section class="ajax-weather-geo">
+            <div class="container">
+                <ul class="cities_geo"></ul>
+            </div>
+        </section> -->
+    </div>
+    <div class="container" id="userLocContainer">
+        <h1>Want to know your current location?</h2><br>
+            <label>Click the buttom to get your current coordinates:</label>
+            <button type="button" onclick="getLocation()">Click me!</button>
+            <p id="userLoc"></p><br>
+            <p id="currentLocTemp"></p>
+    </div>
+    <div id="map"></div>
+   <!--  <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC-j3hac6yZrXTnq3G1_C4K6DsKgVjXpo&callback=initMap"
+      async defer></script> -->
+
+    <script src="./JavaScript/weather_finder.js"></script>
+</body>
+<footer class="page-footer">
+    <div class="container">
+        <small><i>Copyright &copy; 2021 Fabian Soto, COMP 125-001, 2nd Semester - Summer 2021.</i></small>
+    </div>
+</footer>
+
+</html>

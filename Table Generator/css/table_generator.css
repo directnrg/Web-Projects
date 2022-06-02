@@ -1,0 +1,21 @@
+@media screen and (max-width: 1080px) {
+    .home {
+        width: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    } 
+}
+
+.dech1 {
+   color:rgb(19, 98, 163); 
+}
+
+table {
+border-color: rgb(19, 98, 163);
+}
+
+table td {
+    border-color: navy;
+    text-align: center;
+}
+

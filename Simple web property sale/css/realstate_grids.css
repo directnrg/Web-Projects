@@ -1,0 +1,134 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "introtextgrid introimagegrid" "introtextgrid1 introtextgrid2";
+}
+
+.quote-txt-grid {
+  grid-area: quotetextgrid;
+}
+
+.intro-img-grid {
+  grid-area: introimagegrid;
+}
+
+.intro-txt-grid {
+  grid-area: introtextgrid;
+}
+
+.intro-txt-grid1 {
+  grid-area: introtextgrid1;
+}
+
+.intro-txt-grid2 {
+  grid-area: introtextgrid2;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.6fr 0.9fr;
+    gap: 0px 15px;
+    grid-template-areas: "introtextgrid" "introimagegrid" "introtextgrid1" "introtextgrid2";
+  }
+  .intro-img-grid {
+    grid-area: introimagegrid;
+  }
+  .intro-txt-grid {
+    grid-area: introtextgrid;
+  }
+  .intro-txt-grid1 {
+    grid-area: introtextgrid1;
+  }
+  .intro-txt-grid2 {
+    grid-area: introtextgrid2;
+  }
+}
+
+.grid-2columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "row1col1 row1col2";
+}
+
+.row1col1grid {
+  grid-area: row1col1;
+}
+
+.row1col2grid {
+  grid-area: row1col2;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-2columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 15px;
+    grid-template-areas: "row1col1" "row1col2";
+  }
+  .row1col1grid {
+    grid-area: row1col1;
+  }
+  .row1col2grid {
+    grid-area: row1col2;
+  }
+}
+
+.grid-3columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "row1col1 row1col2 row1col3";
+}
+
+.row1col1grid3 {
+  grid-area: row1col1;
+}
+
+.row1col2grid3 {
+  grid-area: row1col2;
+}
+
+.row1col3grid3 {
+  grid-area: row1col3;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-3columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 15px;
+    grid-template-areas: "row1col1" "row1col2" "row1col3";
+  }
+  .row1col1grid3 {
+    grid-area: row1col1;
+  }
+  .row1col2grid3 {
+    grid-area: row1col2;
+  }
+  .row1col3grid3 {
+    grid-area: row1col3;
+  }
+}
+
+/* image galleries grid */
+
+.imgsGalleriesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "gallerygrid";
+}
+
+.imgGallery {
+  grid-area: gallerygrid;
+}
